@@ -48,6 +48,6 @@ $~\personal-website> npm run preview
 - [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 - [Color Highlight](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
 
-## Astro CompilationConfiguration Notes
+## Astro Compilation Configuration Notes
 
 - '@' Alias set to './src/\*'
