@@ -1,12 +1,23 @@
 ---
-
+const { class: className } = Astro.props;
 ---
 
-<div
-  class="w-fit h-fit bg-neutral-700 block
-hover:bg-neutral-800 active:bg-neutral-900 hover:scale-90 transition duration-400 hover:cursor-pointer active:scale-80 active:duration-300 ease-out p-[.3rem]"
->
-  <h1 class="text-white text-[2rem] hover:text-red-300 transition duration-400">
-    Hello, World!
-  </h1>
-</div>
+<h1 class:list={["button-default", "button-hover", "button-active", className]}>
+  Hello, World!
+</h1>
+
+<style>
+  @reference "tailwindcss";
+
+  .button-default {
+    @apply text-neutral-100 bg-neutral-700 text-[2rem] p-[.2rem] transition duration-500;
+  }
+
+  .button-hover {
+    @apply hover:bg-neutral-800 hover:scale-90 hover:cursor-pointer hover:duration-400;
+  }
+
+  .button-active {
+    @apply active:scale-85 active:bg-neutral-900 active:duration-50;
+  }
+</style>
