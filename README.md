@@ -18,10 +18,6 @@ winget install -e --id OpenJS.NodeJS.LTS --accept-package-agreements --accept-so
 
 ## Building From Source
 
-### Windows
-
-Run from powershell:
-
 ```powershell
 # Installs all npm dependencies needed to build.
 $~\personal-website> npm install
